@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="GenerareVegetatie" Label="GenerareVegetatie" Category="Project" />
+    <Node Id="CodeMirror.Base 3.01" Label="CodeMirror.Base 3.01" Category="Package" />
+    <Node Id="CodeMirror.KeyMap 3.01" Label="CodeMirror.KeyMap 3.01" Category="Package" />
+    <Node Id="freeglut 2.8.1.15" Label="freeglut 2.8.1.15" Category="Package" />
+    <Node Id="freeglut.redist 2.8.1.15" Label="freeglut.redist 2.8.1.15" Category="Package" />
+    <Node Id="glew 1.9.0.1" Label="glew 1.9.0.1" Category="Package" />
+    <Node Id="glew.redist 1.9.0.1" Label="glew.redist 1.9.0.1" Category="Package" />
+    <Node Id="glm 0.9.6.1" Label="glm 0.9.6.1" Category="Package" />
+    <Node Id="nupengl.core 0.0.0.1" Label="nupengl.core 0.0.0.1" Category="Package" />
+    <Node Id="nupengl.core.redist 0.0.0.1" Label="nupengl.core.redist 0.0.0.1" Category="Package" />
+    <Node Id="SDL 1.2.15.15" Label="SDL 1.2.15.15" Category="Package" />
+    <Node Id="SDL.redist 1.2.15.15" Label="SDL.redist 1.2.15.15" Category="Package" />
+  </Nodes>
+  <Links>
+    <Link Source="CodeMirror.KeyMap 3.01" Target="CodeMirror.Base 3.01" Category="Package Dependency" />
+    <Link Source="freeglut 2.8.1.15" Target="freeglut.redist 2.8.1.15" Category="Package Dependency" />
+    <Link Source="glew 1.9.0.1" Target="glew.redist 1.9.0.1" Category="Package Dependency" />
+    <Link Source="nupengl.core 0.0.0.1" Target="nupengl.core.redist 0.0.0.1" Category="Package Dependency" />
+    <Link Source="SDL 1.2.15.15" Target="SDL.redist 1.2.15.15" Category="Package Dependency" />
+    <Link Source="GenerareVegetatie" Target="CodeMirror.KeyMap 3.01" Category="Installed Package" />
+    <Link Source="GenerareVegetatie" Target="freeglut 2.8.1.15" Category="Installed Package" />
+    <Link Source="GenerareVegetatie" Target="glew 1.9.0.1" Category="Installed Package" />
+    <Link Source="GenerareVegetatie" Target="glm 0.9.6.1" Category="Installed Package" />
+    <Link Source="GenerareVegetatie" Target="nupengl.core 0.0.0.1" Category="Installed Package" />
+    <Link Source="GenerareVegetatie" Target="SDL 1.2.15.15" Category="Installed Package" />
+  </Links>
+  <Categories>
+    <Category Id="Project" />
+    <Category Id="Package" />
+  </Categories>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Project" ValueLabel="True">
+      <Condition Expression="HasCategory('Project')" />
+      <Setter Property="Background" Value="Blue" />
+    </Style>
+    <Style TargetType="Link" GroupLabel="Package Dependency" ValueLabel="True">
+      <Condition Expression="HasCategory('Package Dependency')" />
+      <Setter Property="Background" Value="Yellow" />
+    </Style>
+  </Styles>
+</DirectedGraph>

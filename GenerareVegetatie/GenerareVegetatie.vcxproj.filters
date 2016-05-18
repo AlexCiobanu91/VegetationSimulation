@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{80055bf3-4a54-48fe-beba-29dafaaa42b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\codemirror-3.01">
+      <UniqueIdentifier>{8ca42ea4-0445-4ff9-94e7-a4620c97bdee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\codemirror-3.01\mode">
+      <UniqueIdentifier>{934552e2-74b3-40ed-85a5-4a1bde5595d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{bb646ba9-3656-40f3-bbe6-3d9e6f2e8fac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\codemirror-3.01">
+      <UniqueIdentifier>{8f081512-fa13-40a8-bf53-81bf35816070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts\codemirror-3.01\keymap">
+      <UniqueIdentifier>{afab05a9-ee03-4ac3-a5b6-396d8ab68987}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Shader_Loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Image_Loader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Grass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Tree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Shaders\terrain_tess_control_shader.glsl" />
+    <None Include="Resources\Shaders\terrain_tess_eval_shader.glsl" />
+    <None Include="Resources\Shaders\grass_fragment_shader.glsl" />
+    <None Include="Resources\Shaders\grass_vertex_shader.glsl" />
+    <None Include="Resources\Shaders\terrain_fragment_shader.glsl" />
+    <None Include="Resources\Shaders\terrain_geometry_shader.glsl" />
+    <None Include="Resources\Shaders\terrain_vertex_shader.glsl" />
+    <None Include="Resources\Shaders\tree_fragment_shader.glsl" />
+    <None Include="Resources\Shaders\tree_vertex_shader.glsl" />
+    <None Include="Resources\Shaders\skybox_vertex_shader.glsl" />
+    <None Include="Resources\Shaders\skybox_fragment_shader.glsl" />
+    <None Include="Resources\Shaders\leaf_fragment_shader.glsl" />
+    <None Include="Resources\Shaders\leaf_vertex_shader.glsl" />
+    <None Include="Resources\Shaders\grass_geometry_shader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\Shader_Loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\VertexFormat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Image_Loader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Grass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Tree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
